@@ -1,0 +1,23 @@
+@import 'ui-variables';
+
+atom-text-editor {
+  .bracket-matcher .region {
+    background-color: hsla(@ui-hue, 100%, 66%, 0.5);
+    border: 1px solid @accent-color;
+    border-radius: 2px;
+    padding: 3px;
+  }
+  .indent-guide {
+      box-shadow: none !important;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        width: 0px;
+        height: 100%;
+        border-left: 1px dashed rgba(255,255,255,.15);
+      }
+    }
+}
