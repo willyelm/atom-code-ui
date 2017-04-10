@@ -1,18 +1,55 @@
 {
   "name": "xatom",
+  "theme": "ui",
   "version": "0.0.10",
   "description": "A clean and elegant Atom UI.",
-  "author": "Williams Medina <williams.medinaa@gmail.com>",
   "keywords": [
     "atom",
-    "ui",
-    "icons",
-    "tree-view",
-    "tabs"
+    "ui"
   ],
-  "repository": "https://github.com/willyelm/xatom.git",
   "license": "MIT",
+  "repository": "https://github.com/willyelm/xatom.git",
+  "main": "lib/main",
   "engines": {
-    "atom": ">=1.6.0 <2.0.0"
+    "atom": ">0.40.0"
+  },
+  "author": "Williams Medina <williams.medinaa@gmail.com>",
+  "scripts": {
+    "start": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/atom": "0.0.37",
+    "@types/lodash": "^4.14.62",
+    "@types/node": "^7.0.12",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "lodash": "^2.3.0",
+    "atom-package-deps": "^4.5.0"
+  },
+  "configSchema": {
+    "fontSize": {
+      "title": "Font Size",
+      "description": "Change the UI font size.",
+      "type": [
+        "integer",
+        "string"
+      ],
+      "minimum": 8,
+      "maximum": 20,
+      "default": "Auto",
+      "order": 1
+    },
+    "tabSizing": {
+      "title": "Tab Sizing",
+      "description": "In Even mode all tabs will be the same size. Great for quickly closing many tabs. In Minimum mode the tabs will only take as little space as needed and also show longer file names.",
+      "type": "string",
+      "default": "Even",
+      "enum": [
+        "Even",
+        "Minimum"
+      ],
+      "order": 2
+    }
   }
 }

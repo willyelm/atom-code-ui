@@ -4,17 +4,18 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 0!important;
 }
 
-.fileIconContainer(@size) {
+.fileIconContainer(@width, @height) {
   font-family: initial;
   content: ' '!important;
   vertical-align: baseline;
-  width: 20px;
-  height: @size!important;
-  top: (100%-@size)/2;
-  bottom: (100%-@size)/2;
-  margin-left: -23px;
+  width: @width;
+  height: @height!important;
+  top: (100%-@height)/2;
+  bottom: (100%-@height)/2;
+  margin-left: -(@width + 3px);
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
@@ -27,11 +28,11 @@
   }
 }
 
-.fileIcon (@size: 86%) {
+.fileIcon (@width: 20px, @height: 85%) {
   position: relative;
-  padding-left: 23px!important;
+  padding-left: (@width + 3px)!important;
   &::before {
-    .fileIconContainer(@size);
+    .fileIconContainer(@width, @height);
     // -webkit-filter: grayscale(80%);
   }
   &.icon-file-directory::before {
@@ -44,10 +45,10 @@
     background-image: url("atom://xatom/icons/settings.svg");
   }
   &.icon-file-text::before {
-    .fileIconImage('text');
+    .fileIconImage('type/text');
   }
   &.icon-file-media::before {
-    .fileIconImage('media');
+    .fileIconImage('type/media');
   }
   // Media Files
   .fileIconFromExtension('png', 'type/media');
