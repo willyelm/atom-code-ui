@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="95" height="129" viewBox="0 0 95 129">
+  <defs>
+    <linearGradient id="ruby-a" x1="84.698%" x2="58.242%" y1="111.399%" y2="64.584%">
+      <stop offset="0%" stop-color="#FB7655"/>
+      <stop offset="0%" stop-color="#FB7655"/>
+      <stop offset="41%" stop-color="#E42B1E"/>
+      <stop offset="99%" stop-color="#900"/>
+      <stop offset="100%" stop-color="#900"/>
+    </linearGradient>
+    <linearGradient id="ruby-b" x1="116.651%" x2="1.746%" y1="53.17%" y2="41.06%">
+      <stop offset="0%" stop-color="#871101"/>
+      <stop offset="0%" stop-color="#871101"/>
+      <stop offset="99%" stop-color="#911209"/>
+      <stop offset="100%" stop-color="#911209"/>
+    </linearGradient>
+    <linearGradient id="ruby-c" x1="50.351%" x2="49.85%" y1="219.327%" y2="7.829%">
+      <stop offset="0%" stop-color="#871101"/>
+      <stop offset="0%" stop-color="#871101"/>
+      <stop offset="99%" stop-color="#911209"/>
+      <stop offset="100%" stop-color="#911209"/>
+    </linearGradient>
+    <linearGradient id="ruby-d" x1="50.012%" x2="66.483%" y1="30.704%" y2="63.146%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="23%" stop-color="#E57252"/>
+      <stop offset="46%" stop-color="#DE3B20"/>
+      <stop offset="99%" stop-color="#A60003"/>
+      <stop offset="100%" stop-color="#A60003"/>
+    </linearGradient>
+    <linearGradient id="ruby-e" x1="46.174%" x2="49.932%" y1="17.29%" y2="82.122%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="23%" stop-color="#E4714E"/>
+      <stop offset="56%" stop-color="#BE1A0D"/>
+      <stop offset="99%" stop-color="#A80D00"/>
+      <stop offset="100%" stop-color="#A80D00"/>
+    </linearGradient>
+    <linearGradient id="ruby-f" x1="43.537%" x2="49.766%" y1="15.594%" y2="92.478%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="18%" stop-color="#E46342"/>
+      <stop offset="40%" stop-color="#C82410"/>
+      <stop offset="99%" stop-color="#A80D00"/>
+      <stop offset="100%" stop-color="#A80D00"/>
+    </linearGradient>
+    <linearGradient id="ruby-g" x1="45.709%" x2="54.217%" y1="58.346%" y2="-46.717%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="54%" stop-color="#C81F11"/>
+      <stop offset="99%" stop-color="#BF0905"/>
+      <stop offset="100%" stop-color="#BF0905"/>
+    </linearGradient>
+    <linearGradient id="ruby-h" x1="27.624%" x2="50.745%" y1="48.193%" y2="51.819%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="31%" stop-color="#DE4024"/>
+      <stop offset="99%" stop-color="#BF190B"/>
+      <stop offset="100%" stop-color="#BF190B"/>
+    </linearGradient>
+    <linearGradient id="ruby-i" x1="-20.466%" x2="104.087%" y1="122.282%" y2="-6.342%">
+      <stop offset="0%" stop-color="#BD0012"/>
+      <stop offset="0%" stop-color="#BD0012"/>
+      <stop offset="7%" stop-color="#FFF"/>
+      <stop offset="17%" stop-color="#FFF"/>
+      <stop offset="27%" stop-color="#C82F1C"/>
+      <stop offset="33%" stop-color="#820C01"/>
+      <stop offset="46%" stop-color="#A31601"/>
+      <stop offset="72%" stop-color="#B31301"/>
+      <stop offset="99%" stop-color="#E82609"/>
+      <stop offset="100%" stop-color="#E82609"/>
+    </linearGradient>
+    <linearGradient id="ruby-j" x1="55.166%" x2="27.65%" y1="65.205%" y2="50.128%">
+      <stop offset="0%" stop-color="#8C0C01"/>
+      <stop offset="0%" stop-color="#8C0C01"/>
+      <stop offset="54%" stop-color="#990C00"/>
+      <stop offset="99%" stop-color="#A80D0E"/>
+      <stop offset="100%" stop-color="#A80D0E"/>
+    </linearGradient>
+    <linearGradient id="ruby-k" x1="79.319%" x2="23.088%" y1="60.108%" y2="24.551%">
+      <stop offset="0%" stop-color="#7E110B"/>
+      <stop offset="0%" stop-color="#7E110B"/>
+      <stop offset="99%" stop-color="#9E0C00"/>
+      <stop offset="100%" stop-color="#9E0C00"/>
+    </linearGradient>
+    <linearGradient id="ruby-l" x1="92.88%" x2="59.841%" y1="72.906%" y2="40.223%">
+      <stop offset="0%" stop-color="#79130D"/>
+      <stop offset="0%" stop-color="#79130D"/>
+      <stop offset="99%" stop-color="#9E120B"/>
+      <stop offset="100%" stop-color="#9E120B"/>
+    </linearGradient>
+    <radialGradient id="ruby-m" cx="32.001%" cy="40.21%" r="69.573%" fx="32.001%" fy="40.21%" gradientTransform="matrix(.52253 0 0 1 .153 0)">
+      <stop offset="0%" stop-color="#A80D00"/>
+      <stop offset="0%" stop-color="#A80D00"/>
+      <stop offset="99%" stop-color="#7E0E08"/>
+      <stop offset="100%" stop-color="#7E0E08"/>
+    </radialGradient>
+    <radialGradient id="ruby-n" cx="13.549%" cy="40.86%" r="88.386%" fx="13.549%" fy="40.86%" gradientTransform="matrix(.77846 0 0 1 .03 0)">
+      <stop offset="0%" stop-color="#A30C00"/>
+      <stop offset="0%" stop-color="#A30C00"/>
+      <stop offset="99%" stop-color="#800E08"/>
+      <stop offset="100%" stop-color="#800E08"/>
+    </radialGradient>
+    <linearGradient id="ruby-o" x1="56.57%" x2="3.105%" y1="62.653%" y2="40.701%">
+      <stop offset="0%" stop-color="#8B2114"/>
+      <stop offset="0%" stop-color="#8B2114"/>
+      <stop offset="43%" stop-color="#9E100A"/>
+      <stop offset="99%" stop-color="#B3100C"/>
+      <stop offset="100%" stop-color="#B3100C"/>
+    </linearGradient>
+    <linearGradient id="ruby-p" x1="46.662%" x2="57.41%" y1="35.599%" y2="100.694%">
+      <stop offset="0%" stop-color="#B31000"/>
+      <stop offset="0%" stop-color="#B31000"/>
+      <stop offset="44%" stop-color="#910F08"/>
+      <stop offset="99%" stop-color="#791C12"/>
+      <stop offset="100%" stop-color="#791C12"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" transform="translate(21 45)">
+    <polygon fill="url(#ruby-a)" points="42.591 36.184 11.204 54.822 51.844 52.064 54.974 11.085 42.591 36.184"/>
+    <polygon fill="url(#ruby-b)" points="51.911 52.036 48.418 27.927 38.903 40.491 51.911 52.036"/>
+    <polygon fill="url(#ruby-c)" points="51.958 52.036 26.368 50.027 11.34 54.769"/>
+    <polygon fill="url(#ruby-d)" points="11.376 54.775 17.769 33.831 3.701 36.839 11.376 54.774"/>
+    <polygon fill="url(#ruby-e)" points="38.901 40.56 33.018 17.519 16.185 33.299 38.901 40.56"/>
+    <polygon fill="url(#ruby-f)" points="53.64 17.844 37.727 4.847 33.296 19.173 53.64 17.844"/>
+    <polygon fill="url(#ruby-g)" points="46.198 .214 36.839 5.386 30.935 .144 46.198 .214"/>
+    <polygon fill="url(#ruby-h)" points="0 43.865 3.921 36.714 .749 28.196"/>
+    <path fill="#FFF" d="M0.538352941,27.9270588 L3.72921569,36.977902 L17.5941765,33.8672745 L33.4233922,19.1559608 L37.8906863,4.96660784 L30.8567255,0 L18.898,4.4754902 C15.1301765,7.97996078 7.81905882,14.9138431 7.5554902,15.0441176 C7.2945098,15.1774118 2.72756863,23.8093922 0.538352941,27.9270588 L0.538352941,27.9270588 Z"/>
+    <path fill="url(#ruby-i)" d="M11.7423922,11.6673333 C19.9082745,3.57090196 30.4352745,-1.21258824 34.4750784,2.86345098 C38.5127255,6.9394902 34.2309216,16.8448824 26.0650392,24.9387255 C17.8991569,33.0323529 7.50264706,38.0794118 3.46543137,34.0033725 C-0.574372549,29.9301373 3.5765098,19.7611765 11.7423922,11.6673333 L11.7423922,11.6673333 Z"/>
+    <path fill="url(#ruby-j)" d="M11.3761569,54.7661961 L17.7190588,33.7564118 L38.7840588,40.5237843 C31.1677451,47.6658039 22.6966667,53.7035098 11.3761569,54.7661961 L11.3761569,54.7661961 Z"/>
+    <path fill="url(#ruby-k)" d="M33.4512157,19.114549 L38.8591176,40.535 C45.2214314,33.8452745 50.9315098,26.6534314 53.728098,17.7578824 L33.4514314,19.114549 L33.4512157,19.114549 Z"/>
+    <path fill="url(#ruby-l)" d="M53.6728824,17.8659412 C55.8372941,11.3345294 56.3366078,1.96447059 46.1311961,0.224745098 L37.7571765,4.85013725 L53.6728824,17.8659412 L53.6728824,17.8659412 Z"/>
+    <path fill="#9E1209" d="M0,43.7702941 C0.299803922,54.5500784 8.07701961,54.7107647 11.3899608,54.8052353 L3.73741176,36.9334706 L0,43.7702941 Z"/>
+    <path fill="url(#ruby-m)" d="M33.4814118,19.1479804 C38.3703725,22.1529216 48.2235686,28.1878235 48.4232941,28.2986863 C48.7338824,28.4733922 52.6712353,21.659 53.5648235,17.8077059 L33.4814118,19.1479804 L33.4814118,19.1479804 Z"/>
+    <path fill="url(#ruby-n)" d="M17.7106471,33.7564118 L26.1899216,50.1157843 C31.2037647,47.3966275 35.1301176,44.0836863 38.7258235,40.535 L17.7106471,33.7564118 Z"/>
+    <path fill="url(#ruby-o)" d="M3.70419608,36.9556863 L2.50282353,51.2617255 C4.76968627,54.3583333 7.8885098,54.6275098 11.1596078,54.3861569 C8.79288235,48.495549 4.06482353,36.7171373 3.70419608,36.9556863 Z"/>
+    <path fill="url(#ruby-p)" d="M37.7075686,4.88615686 L54.5526667,7.25007843 C53.6534706,3.44062745 50.8926863,0.982235294 46.1868431,0.213745098 L37.7075686,4.88615686 L37.7075686,4.88615686 Z"/>
+  </g>
+</svg>

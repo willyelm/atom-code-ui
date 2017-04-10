@@ -21,7 +21,13 @@
   background-position: center center;
 }
 
-.fileIcon (@size: 90%) {
+.fileIconFromExtension(@extension: '', @fileType: @extension) {
+  &[data-name$='.@{extension}']::before {
+    .fileIconImage(@fileType);
+  }
+}
+
+.fileIcon (@size: 86%) {
   position: relative;
   padding-left: 23px!important;
   &::before {
@@ -37,16 +43,32 @@
   &.icon-file-text::before {
     .fileIconImage('text');
   }
-  &[data-name$='.md']::before {
-    .fileIconImage('markdown');
+  &.icon-file-media::before {
+    .fileIconImage('media');
   }
-  &[data-name$='.json']::before {
-    .fileIconImage('json');
-  }
-  &[data-name$='.ts']::before {
-    .fileIconImage('typescript');
-  }
-  &[data-name$='.js']::before {
-    .fileIconImage('javascript');
-  }
+  .fileIconFromExtension('png', 'media');
+  .fileIconFromExtension('jpg', 'media');
+  .fileIconFromExtension('jpeg', 'media');
+  .fileIconFromExtension('svg', 'media');
+  .fileIconFromExtension('md', 'markdown');
+  .fileIconFromExtension('swift');
+  .fileIconFromExtension('rb', 'ruby');
+  .fileIconFromExtension('py', 'python');
+  .fileIconFromExtension('go', 'gopher');
+  .fileIconFromExtension('java');
+  .fileIconFromExtension('pdf');
+  .fileIconFromExtension('html');
+  .fileIconFromExtension('jade');
+  .fileIconFromExtension('pug', 'jade');
+  .fileIconFromExtension('css');
+  .fileIconFromExtension('less');
+  .fileIconFromExtension('sass');
+  .fileIconFromExtension('scss', 'sass');
+  .fileIconFromExtension('styl', 'stylus');
+  .fileIconFromExtension('php');
+  .fileIconFromExtension('json');
+  .fileIconFromExtension('sketch');
+  .fileIconFromExtension('coffee', 'coffeescript');
+  .fileIconFromExtension('js', 'javascript');
+  .fileIconFromExtension('ts', 'typescript');
 }

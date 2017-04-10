@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="95" height="129" viewBox="0 0 95 129">
-  <g fill="none" fill-rule="evenodd" stroke="#99A3AE" stroke-linecap="square" stroke-width="2" transform="translate(23 48)">
-    <path d="M.409766171 24L44.6645126 24M.45994162 1L50.1336366 1M.342865571 12L37.3723473 12M.234152098 36L25.5225786 36"/>
+  <g fill="none" fill-rule="evenodd" stroke-linecap="square" stroke-width="3" transform="translate(23 48)">
+    <path stroke="#B2BAC5" d="M0.409766171,24.5 L44.6645126,24.5"/>
+    <path stroke="#99A3AE" d="M.45994162 1.5L50.1336366 1.5M.342865571 12.5L46 12.5"/>
+    <path stroke="#C2CAD4" d="M0.234152098,36.5 L39,36.5"/>
   </g>
 </svg>

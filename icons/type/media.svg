@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="95" height="129" viewBox="0 0 95 129">
+  <g fill="none" fill-rule="evenodd" transform="translate(18 40)">
+    <rect width="53.629" height="41.66" x="4.29" y="5.669" fill="#FFF" fill-rule="nonzero" transform="rotate(12.562 31.104 26.499)"/>
+    <rect width="53.629" height="41.66" x="4.29" y="5.669" stroke="#5C718B" stroke-linecap="round" stroke-linejoin="round" transform="rotate(12.562 31.104 26.499)"/>
+    <polygon fill="#5C718B" fill-rule="nonzero" points="58.821 25.44 58.821 11.342 17.54 2.12 9.062 2.12 .424 40.969 37.73 49.29 53.521 49.29" opacity=".2"/>
+    <polygon fill="#FFF" fill-rule="nonzero" points="48.858 4.77 2.65 4.77 2.65 46.64 56.171 46.64 56.171 12.084"/>
+    <polygon stroke="#5C718B" stroke-linecap="round" stroke-linejoin="round" points="48.858 4.77 2.65 4.77 2.65 46.64 56.171 46.64 56.171 12.084"/>
+    <g transform="translate(7.949 10.6)">
+      <rect width="42.393" height="30.74" fill="#74AFFF" fill-rule="nonzero"/>
+      <g transform="translate(0 3.71)">
+        <polygon fill="#BC8D66" fill-rule="nonzero" points="42.499 27.03 28.138 1.696 16.533 18.285 10.598 9.381 .106 27.03 10.439 27.03"/>
+        <ellipse cx="19.607" cy="5.83" fill="#FFF17E" fill-rule="nonzero" rx="5.829" ry="5.83"/>
+        <polygon fill="#FFF" fill-rule="nonzero" points="10.598 9.275 6.147 16.748 7.737 19.716 9.485 18.126 12.453 20.617 14.308 19.716 16.427 18.126"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M19.9777778,13.25 C19.9777778,13.25 22.1504274,17.066 22.2564103,16.748 C22.3623932,16.43 25.4888889,13.78 25.4888889,13.78 L29.1452991,15.688 L29.9401709,10.229 L36.5111111,16.43 L28.1384615,1.643 L19.9777778,13.25 Z"/>
+        <polygon fill="#242C88" fill-rule="nonzero" points="28.138 1.696 33.703 27.03 42.499 27.03" opacity=".4"/>
+        <polyline stroke="#5C718B" stroke-linecap="round" stroke-linejoin="round" points="42.499 26.977 28.138 1.643 10.439 26.977"/>
+        <polyline stroke="#5C718B" stroke-linecap="round" stroke-linejoin="round" points="16.533 18.232 10.598 9.275 .106 26.977"/>
+        <polygon fill="#242C88" fill-rule="nonzero" points="16.533 18.232 10.598 9.275 14.308 21.359" opacity=".4"/>
+        <polyline stroke="#5C718B" stroke-linecap="round" stroke-linejoin="round" points="16.692 26.977 24.959 15.635 32.007 26.977"/>
+        <polygon fill="#242C88" fill-rule="nonzero" points="27.715 27.03 24.959 15.741 32.007 27.03" opacity=".4"/>
+      </g>
+      <rect width="42.393" height="30.74" stroke="#5C718B" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <polygon fill="#FFF8BD" fill-rule="nonzero" points="56.171 12.19 48.752 12.19 48.752 4.77"/>
+    <polygon stroke="#5C718B" stroke-linecap="round" stroke-linejoin="round" points="56.171 12.19 48.752 12.19 48.752 4.77"/>
+  </g>
+</svg>
