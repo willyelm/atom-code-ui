@@ -1,5 +1,5 @@
 {
-  "name": "Xatom",
+  "name": "xatom",
   "version": "0.0.5",
   "description": "A clean and elegant Atom UI.",
   "author": "Williams Medina <williams.medinaa@gmail.com>",
@@ -10,7 +10,7 @@
     "tree-view",
     "tabs"
   ],
-  "repository": "https://github.com/willyelm/Xatom.git",
+  "repository": "https://github.com/willyelm/xatom.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.6.0 <2.0.0"
