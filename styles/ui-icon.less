@@ -1,5 +1,5 @@
 .fileIconImage(@fileType: '', @extension: 'svg') {
-  background-image: url('atom://xatom/icons/type/@{fileType}.@{extension}'),
+  background-image: url('atom://xatom/icons/@{fileType}.@{extension}'),
                     url("atom://xatom/icons/file.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   background-position: center center;
 }
 
-.fileIconFromExtension(@extension: '', @fileType: @extension) {
+.fileIconFromExtension(@extension: '', @fileType: 'type/@{extension}') {
   &[data-name$='.@{extension}']::before {
     .fileIconImage(@fileType);
   }
@@ -40,35 +40,58 @@
   &.icon-repo::before {
     background-image: url("atom://xatom/icons/project.svg");
   }
+  &.icon-tools::before {
+    background-image: url("atom://xatom/icons/settings.svg");
+  }
   &.icon-file-text::before {
     .fileIconImage('text');
   }
   &.icon-file-media::before {
     .fileIconImage('media');
   }
-  .fileIconFromExtension('png', 'media');
-  .fileIconFromExtension('jpg', 'media');
-  .fileIconFromExtension('jpeg', 'media');
-  .fileIconFromExtension('svg', 'media');
-  .fileIconFromExtension('md', 'markdown');
+  // Media Files
+  .fileIconFromExtension('png', 'type/media');
+  .fileIconFromExtension('jpg', 'type/media');
+  .fileIconFromExtension('jpeg', 'type/media');
+  .fileIconFromExtension('svg', 'type/media');
+  // Archive Files
+  .fileIconFromExtension('zip', 'archive');
+  .fileIconFromExtension('rar', 'archive');
+  .fileIconFromExtension('tar', 'archive');
+  .fileIconFromExtension('bz2', 'archive');
+  .fileIconFromExtension('tb2', 'archive');
+  .fileIconFromExtension('tbz', 'archive');
+  .fileIconFromExtension('tbz2', 'archive');
+  .fileIconFromExtension('gz', 'archive');
+  .fileIconFromExtension('tgz', 'archive');
+  .fileIconFromExtension('lz', 'archive');
+  .fileIconFromExtension('lzma', 'archive');
+  .fileIconFromExtension('tlz', 'archive');
+  .fileIconFromExtension('xz', 'archive');
+  .fileIconFromExtension('txz', 'archive');
+  .fileIconFromExtension('z', 'archive');
+  .fileIconFromExtension('tz', 'archive');
+  // Script Files
+  .fileIconFromExtension('md', 'type/markdown');
   .fileIconFromExtension('swift');
-  .fileIconFromExtension('rb', 'ruby');
-  .fileIconFromExtension('py', 'python');
-  .fileIconFromExtension('go', 'gopher');
+  .fileIconFromExtension('rb', 'type/ruby');
+  .fileIconFromExtension('py', 'type/python');
+  .fileIconFromExtension('go', 'type/gopher');
   .fileIconFromExtension('java');
   .fileIconFromExtension('pdf');
   .fileIconFromExtension('html');
   .fileIconFromExtension('jade');
-  .fileIconFromExtension('pug', 'jade');
+  .fileIconFromExtension('pug', 'type/jade');
   .fileIconFromExtension('css');
   .fileIconFromExtension('less');
   .fileIconFromExtension('sass');
-  .fileIconFromExtension('scss', 'sass');
-  .fileIconFromExtension('styl', 'stylus');
+  .fileIconFromExtension('scss', 'type/sass');
+  .fileIconFromExtension('styl', 'type/stylus');
   .fileIconFromExtension('php');
   .fileIconFromExtension('json');
   .fileIconFromExtension('sketch');
-  .fileIconFromExtension('coffee', 'coffeescript');
-  .fileIconFromExtension('js', 'javascript');
-  .fileIconFromExtension('ts', 'typescript');
+  .fileIconFromExtension('coffee', 'type/coffeescript');
+  .fileIconFromExtension('cson', 'type/coffeescript');
+  .fileIconFromExtension('js', 'type/javascript');
+  .fileIconFromExtension('ts', 'type/typescript');
 }
