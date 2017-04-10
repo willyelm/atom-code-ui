@@ -1,0 +1,52 @@
+.fileIconImage(@fileType: '', @extension: 'svg') {
+  background-image: url('atom://Xatom/icons/type/@{fileType}.@{extension}'),
+                    url("atom://Xatom/icons/file.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fileIconContainer(@size) {
+  font-family: initial;
+  content: ' '!important;
+  vertical-align: baseline;
+  width: 20px;
+  height: @size!important;
+  top: (100%-@size)/2;
+  bottom: (100%-@size)/2;
+  margin-left: -23px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fileIcon (@size: 90%) {
+  position: relative;
+  padding-left: 23px!important;
+  &::before {
+    .fileIconContainer(@size);
+    // -webkit-filter: grayscale(80%);
+  }
+  &.icon-file-directory::before {
+    background-image: url("atom://Xatom/icons/folder.svg");
+  }
+  &.icon-repo::before {
+    background-image: url("atom://Xatom/icons/project.svg");
+  }
+  &.icon-file-text::before {
+    .fileIconImage('text');
+  }
+  &[data-name$='.md']::before {
+    .fileIconImage('markdown');
+  }
+  &[data-name$='.json']::before {
+    .fileIconImage('json');
+  }
+  &[data-name$='.ts']::before {
+    .fileIconImage('typescript');
+  }
+  &[data-name$='.js']::before {
+    .fileIconImage('javascript');
+  }
+}
