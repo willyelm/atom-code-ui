@@ -1,7 +1,5 @@
-
 // Settings
 
-// Modular Scale (1.125): http://www.modularscale.com/?1&em&1.125&web&table
 @ms-6: @ui-size * 2.027;
 @ms-5: @ui-size * 1.802;
 @ms-4: @ui-size * 1.602;
@@ -12,20 +10,23 @@
 @ms_1: @ui-size * 0.889;
 @ms_2: @ui-size * 0.790;
 
-
-
 .settings-view {
-
-	// Menu ------------------------------
-
+	.setting-title {
+		font-size: @ui-size;
+	}
+	// Menu
 	.config-menu {
+    .button-area {
+      margin: @ui-padding/2;
+      .btn {
+        font-size: @ui-size;
+      }
+    }
 		position: relative;
 		min-width: @ui-size * 15;
 		max-width: @ui-size * 20;
-		border-width: 0 1px 0 0;
-		border-image: linear-gradient(@level-2-color 10px, @base-border-color 200px) 0 1 0 0 stretch;
-		background: @level-2-color;
-
+    padding-top: 0;
+		background: @ui-syntax-color;//@base-background-color;
 		.btn {
 			white-space: initial;
 			font-size: @ms_1;
@@ -40,7 +41,7 @@
 	}
 	.nav {
 		& > li > a {
-			padding: @ui-padding/2 @ui-padding;
+			padding: @ui-padding/2;
 			line-height: @ui-line-height;
 		}
 	}
@@ -49,7 +50,7 @@
 	// Sections ------------------------------
 
 	& > .panels {
-		background-color: @level-2-color;
+		background-color: @base-background-color;
 	}
 
 	.section-container {
@@ -62,31 +63,28 @@
 	.section,
 	.section:first-child,
 	.section:last-child {
-		padding: @ui-padding*3;
+		padding: @ui-padding;
 	}
 
 	.themes-panel .control-group {
 		margin-top: @ui-padding*2;
 	}
 
-
-	// Titles ------------------------------
-
+	// Titles
 	.section .section-heading {
+		font-size: @ui-size*1.2;
 		margin-bottom: @ui-padding/1.5;
 	}
-
 	.sub-section-heading.icon:before,
 	.section-heading.icon:before {
 		margin-right: @ui-padding-icon;
 	}
 
-
-
-	// Cards ------------------------------
-
+	// Cards
 	.package-card {
-		padding: @ui-padding;
+		border: none;
+		padding: @ui-padding*0.5;
+		font-size: @ui-size;
 		.meta-controls .status-indicator {
 			width: @ui-padding/4;
 			&:before {
@@ -96,16 +94,13 @@
 	}
 
 
-	// Components ------------------------------
-
+	// Components
 	.icon::before {
 		color: @text-color-subtle;
 	}
-
 	.editor-container {
 		margin: @ui-padding 0;
 	}
-
 	.form-control {
 		font-size: @ui-size*1.25;
 		height: @ui-line-height;
@@ -118,7 +113,7 @@
 	}
 
 	.install-button {
-		.btn-variant(@accent-bg-color);
+		.btn-variant(@accent-color);
 	}
 
 	input[type="checkbox"] {
@@ -132,9 +127,7 @@
 			background-color: @accent-text-color;
 		}
 	}
-
 	.search-container .btn {
 		font-size: @ui-input-size;
 	}
-
 }

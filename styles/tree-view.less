@@ -1,8 +1,19 @@
 @tree-view-height: @ui-line-height;
 
+@tree-view-bg-color: lighten(@base-background-color, 2%);
+
+.tree-view-scroller {
+  &::-webkit-scrollbar-track {
+    background-color: @tree-view-bg-color;
+  }
+	&::-webkit-scrollbar-corner {
+		background: @tree-view-bg-color;
+	}
+}
+
 .tree-view {
   font-size: @ui-size;
-  background: @tree-view-background-color;
+  background: @tree-view-bg-color;
   .project-root.project-root {
     &:before {
       height: @ui-tab-height;
@@ -12,15 +23,17 @@
       line-height: @ui-tab-height;
     }
   }
-  .selected:before {
-    background: @tree-view-background-selected-color;
+  .selected {
+    .header > .name,
+    > .name {
+      color: lighten(@text-color, 30%);
+    }
+    &:before {
+      background: @accent-color;
+      box-shadow: 0 0 0 0.5px darken(fade(@accent-color, 25%), 4%) inset;
+    }
   }
 }
-//
-// .theme-one-dark-ui .tree-view .project-root.project-root::before {
-//   border-top: 1px solid transparent;
-//   background-clip: padding-box;
-// }
 
 .tree-view-resizer {
   .tree-view-resize-handle {
@@ -48,28 +61,37 @@
   .fileIcon;
 }
 
+// status
+.statusBadge(@bgColor, @letter) {
+  &.list-item,
+  .header.list-item {
+    color: @text-color!important;
+    :after {
+      content: '@{letter}';
+      background-color: @bgColor;
+      color: #FFF;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 2px;
+      font-size: 60%;
+      line-height: 1;
+      margin: 0 4px;
+      margin-top: -2px;
+      border-radius: @component-border-radius/2;
+    }
+  }
+}
+
 .status-ignored .icon {
   &:before {
     opacity: .35;
   }
 }
 
-// Active tree-view marker --------------
-
-.tree-view::before {
-  content: "";
-  position: fixed;
-  pointer-events: none;
-  z-index: 1;
-  margin-left: -@component-icon-padding;
-  height: @ui-tab-height;
-  width: 2px;
-  background: @accent-color;
-  opacity: 0;
-  transition: opacity .16s;
+.status-modified {
+  .statusBadge(@text-color-warning, 'M')
 }
 
-.tree-view:focus::before {
-  opacity: 1;
-  transition-duration: .32s;
+.status-added {
+  .statusBadge(@text-color-success, 'A')
 }

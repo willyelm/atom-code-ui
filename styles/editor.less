@@ -8,10 +8,11 @@ atom-panel-container atom-text-editor.is-focused {
 
 atom-text-editor {
   .bracket-matcher .region {
-    background-color: hsla(@ui-hue, 100%, 66%, 0.5);
-    border: 1px solid @accent-color;
+    background-color: fade(@accent-color, 60%);
+    border: 0.5px solid fade(@accent-color, 70%);
     border-radius: 2px;
-    padding: 3px;
+    padding: 5px;
+    margin-left: -2px;
   }
   .indent-guide {
     box-shadow: none !important;
@@ -39,22 +40,20 @@ atom-text-editor[mini] {
   padding-left: @ui-padding/3;
   border-radius: @component-border-radius;
   color: @text-color-highlight;
-  border: 1px solid @input-border-color;
+  box-shadow: 0 0 0 0.05rem @input-border-color inset;
   background-color: @input-background-color;
-
   .placeholder-text {
     color: @text-color-subtle;
   }
-
-  .selection .region {
-    background-color: @input-selection-color;
+  .selection {
+    .region {
+      background-color: @input-selection-color;
+    }
   }
-
   .cursor {
     border-color: @accent-color;
-    border-width: 2px;
+    border-width: 3px;
   }
-
   &.is-focused {
     .focus();
     background-color: @input-background-color-focus;

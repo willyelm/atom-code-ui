@@ -3,6 +3,7 @@
 @title-padding: .66em;
 @icon-padding-top: .5em; // 2.5 (total) - 1.5 (text) / 2
 @icon-padding-right: .5em;
+@tab-min-width: 7em;
 
 .tab-bar {
   position: relative;
@@ -41,6 +42,12 @@
       background-color: @tab-background-color-active;
       box-shadow: none;
     }
+    &,
+    &.active {
+      flex: 0 0 auto;
+      min-width: 2.75em;
+      max-width: @tab-min-width * 3.3;
+    }
     &:first-of-type {
       border-left: none;
     }
@@ -53,25 +60,21 @@
     }
 
 
-    // Title ----------------------
-
+    // Title
     .title {
       text-align: center;
       margin: 0 @title-padding;
       .fileIcon(26px, 64%);
     }
 
-
-    // Icons ----------------------
-
+    // Icons
     .title.title:before {
       margin-right: .1em;
       font-size: 1.1em;
       text-align: left;
     }
 
-    // Close icon ----------------------
-
+    // Close icon
     .close-icon {
       top: @icon-padding-top;
       right: @icon-padding-right;
@@ -109,13 +112,12 @@
     }
   }
 
-  // Modified icon ----------------------
-
+  // Modified icon
   .tab.modified {
     &:hover .close-icon {
       color: @accent-color;
       &:hover {
-        color: @accent-bg-text-color;
+        color: @accent-color;
       }
     }
     &:not(:hover) .close-icon {
@@ -136,17 +138,18 @@
   }
 
 
-  // Tabs in the docks ----------------------
-
+  // Tabs in the docks
   atom-dock & {
+    .tab,
+    .tab.active {
+      max-width: @tab-min-width * 2;
+    }
     .tab.active {
       background-color: @tool-panel-background-color;
     }
   }
 
-
-  // Dragging ----------------------
-
+  // Dragging
   .tab.is-dragging {
     opacity: .5;
 
@@ -159,16 +162,6 @@
   .placeholder {
     position: relative;
     pointer-events: none;
-
-    // bar
-    &:before {
-      z-index: 1;
-      margin: 0;
-      width: 2px;
-      height: @ui-tab-height;
-      background-color: @accent-color;
-    }
-
     // arrow
     &:after {
       z-index: 0;
@@ -183,7 +176,6 @@
     &:first-child {
       position: absolute;
       left: 0;
-
       &:after {
         transform: none;
         margin-left: 2px;
@@ -204,9 +196,6 @@
     }
   }
 
-
-  // Overrides ----------------------
-
   .tab,
   .tab.active {
     padding-right: 0;
@@ -216,34 +205,19 @@
   }
 }
 
-
-// Active pane marker --------------
-
-atom-pane.active .tab.active:before {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 2px;
-  background: @accent-color;
-}
-
 // hide marker in docks
 atom-dock .tab-bar .tab::before {
   display: none;
 }
 
 // Custom tabs --------------
-.tab-bar .tab.active {
-  &[data-type$="Editor"],
-  &[data-type$="AboutView"],
-  &[data-type$="TimecopView"],
-  &[data-type$="StyleguideView"],
-  &[data-type="MarkdownPreviewView"] {
-    color: @tab-text-color-editor;
-    background-color: @tab-background-color-editor; // Match syntax background color
-  }
-}
+// .tab-bar .tab.active {
+//   &[data-type$="Editor"],
+//   &[data-type$="AboutView"],
+//   &[data-type$="TimecopView"],
+//   &[data-type$="StyleguideView"],
+//   &[data-type="MarkdownPreviewView"] {
+//     color: @tab-text-color-editor;
+//     background-color: @tab-background-color-editor;
+//   }
+// }

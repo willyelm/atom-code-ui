@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 100">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="100" viewBox="0 0 128 100">
   <defs>
     <linearGradient id="folder-c" x1="50%" x2="50%" y1="2.075%" y2="13.443%">
       <stop offset="0%" stop-color="#FFEA98"/>
       <stop offset="100%" stop-color="#FFECA0"/>
     </linearGradient>
-    <path id="folder-b" d="M0,3.99793926 C0,1.78993837 1.79189836,0 3.99476672,0 L37.0393044,0 C38.145711,0 39.6331399,0.676050851 40.3556195,1.5031893 L44.7982701,6.58940553 C45.5234138,7.41959406 47.0144102,8.09259483 48.111075,8.09259483 L106.003473,8.09259483 C108.210694,8.09259483 110,9.87952099 110,12.0986059 L110,85.993989 C110,88.2064478 108.205131,90 106.003734,90 L3.996266,90 C1.78918923,90 0,88.2022159 0,86.0020607 L0,3.99793926 Z"/>
-    <filter id="folder-a" width="106.4%" height="107.8%" x="-3.2%" y="-3.9%" filterUnits="objectBoundingBox">
+    <path id="folder-b" d="M0,2.00032778 C0,0.89557725 0.895119,0 2.00996924,0 L33.4833314,0 C34.5934067,0 36.0978455,0.651361544 36.8560954,1.46833116 L40.5565315,5.45533331 C41.3091823,6.26627022 42.8083933,6.92366447 43.9185945,6.92366447 L96.0078801,6.92366447 C98.212667,6.92366447 100,8.70859208 100,10.9174745 L100,74.997019 C100,76.1032348 99.1049485,77 98.0024621,77 L1.99753791,77 C0.894328186,77 0,76.1086254 0,74.9996722 L0,2.00032778 Z"/>
+    <filter id="folder-a" width="107%" height="109.1%" x="-3.5%" y="-4.5%" filterUnits="objectBoundingBox">
       <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
       <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
       <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
       <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.314424819 0"/>
     </filter>
-    <linearGradient id="folder-f" x1="50%" x2="50%" y1="0%" y2="45.95%">
-      <stop offset="0%" stop-color="#FAD766"/>
-      <stop offset="100%" stop-color="#FDE272"/>
+    <linearGradient id="folder-f" x1="50%" x2="50%" y1=".86%" y2="45.95%">
+      <stop offset="0%" stop-color="#FFDA5E"/>
+      <stop offset="100%" stop-color="#F8DC69"/>
     </linearGradient>
-    <path id="folder-e" d="M0,18.0007992 C0,16.8957883 0.88543877,16 2.00315669,16 L107.996843,16 C109.103156,16 110,16.8978162 110,18.0007992 L110,86 L0,86 L0,18.0007992 Z"/>
-    <filter id="folder-d" width="110.9%" height="117.1%" x="-5.5%" y="-11.4%" filterUnits="objectBoundingBox">
+    <path id="folder-e" d="M0,23.0065993 C0,21.8983851 0.895051472,21 1.99753791,21 L98.0024621,21 C99.1056718,21 100,21.9025574 100,23.0065993 L100,73 L0,73 L0,23.0065993 Z"/>
+    <filter id="folder-d" width="112%" height="123.1%" x="-6%" y="-15.4%" filterUnits="objectBoundingBox">
       <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
       <feOffset dy="-2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
@@ -25,15 +25,15 @@
       <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.362484056   0 0 0 0 0.339517637   0 0 0 0 0.258204098  0 0 0 0.223618659 0"/>
     </filter>
   </defs>
-  <g fill="none" fill-rule="evenodd" transform="translate(9 5)">
+  <g fill="none" fill-rule="evenodd" transform="translate(14 12)">
     <use fill="#000" filter="url(#folder-a)" xlink:href="#folder-b"/>
     <use fill="url(#folder-c)" xlink:href="#folder-b"/>
-    <path stroke="#998A4A" stroke-width=".5" d="M-0.25,3.99793926 L-0.25,86.0020607 C-0.25,88.3428976 1.65372361,90.25 3.996266,90.25 L106.003734,90.25 C108.345246,90.25 110.25,88.3424733 110.25,85.993989 L110.25,12.0986059 C110.25,9.74380689 108.35112,7.84259483 106.003473,7.84259483 L48.111075,7.84259483 C47.0837853,7.84259483 45.6623977,7.19868613 44.9865571,6.42494274 L40.5439065,1.33872651 C39.7730004,0.456146395 38.2164273,-0.25 37.0393044,-0.25 L3.99476672,-0.25 C1.65264796,-0.25 -0.25,1.65304664 -0.25,3.99793926 Z"/>
+    <path stroke="#998A4A" stroke-width=".5" d="M-0.25,2.00032778 L-0.25,74.9996722 C-0.25,76.2452483 0.754808596,77.25 1.99753791,77.25 L98.0024621,77.25 C99.243408,77.25 100.25,76.2409175 100.25,74.997019 L100.25,10.9174745 C100.25,8.57160605 98.3518235,6.67366447 96.0078801,6.67366447 L43.9185945,6.67366447 C42.8800972,6.67366447 41.4465954,6.04682648 40.7397707,5.28526448 L37.0393345,1.29826232 C36.2356303,0.432318283 34.6656836,-0.25 33.4833314,-0.25 L2.00996924,-0.25 C0.758873798,-0.25 -0.25,0.75568467 -0.25,2.00032778 Z"/>
     <g>
       <use fill="#000" filter="url(#folder-d)" xlink:href="#folder-e"/>
       <use fill="url(#folder-f)" xlink:href="#folder-e"/>
-      <path stroke="#998E5B" stroke-width=".5" d="M-0.25,18.0007992 L-0.25,86 L-0.25,86.25 L0,86.25 L110,86.25 L110.25,86.25 L110.25,86 L110.25,18.0007992 C110.25,16.7590179 109.2405,15.75 107.996843,15.75 L2.00315669,15.75 C0.751151697,15.75 -0.25,16.7539216 -0.25,18.0007992 Z"/>
+      <path stroke="#998E5B" stroke-width=".5" d="M-0.25,23.0065993 L-0.25,73 L-0.25,73.25 L0,73.25 L100,73.25 L100.25,73.25 L100.25,73 L100.25,23.0065993 C100.25,21.7633777 99.2426453,20.75 98.0024621,20.75 L1.99753791,20.75 C0.756490618,20.75 -0.25,21.7608035 -0.25,23.0065993 Z"/>
     </g>
-    <path fill="#EFD66F" d="M110,51 L110,86 L0,86 L0,68.5 C0,68.5 19.6844618,82.8183486 63.9518229,82.8183486 C108.219184,82.8183486 110,51 110,51 Z"/>
+    <path fill="#EFD66F" d="M100,38 L100,73 L0,73 L0,55.5 C0,55.5 17.8949653,69.8183486 58.1380208,69.8183486 C98.3810764,69.8183486 100,38 100,38 Z"/>
   </g>
 </svg>

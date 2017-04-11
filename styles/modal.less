@@ -106,15 +106,15 @@ atom-panel.modal {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: @overlay-backdrop-color;
-    opacity: @overlay-backdrop-opacity;
+    background: darken(@base-background-color, 10%);
+    opacity: .75;
     backface-visibility: hidden; // fixes scrollbar on retina screens
     -webkit-animation: overlay-fade .24s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   @-webkit-keyframes overlay-fade {
     0% { opacity: 0; }
-    100% { opacity: @overlay-backdrop-opacity; }
+    100% { opacity: .75; }
   }
 
 }

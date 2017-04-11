@@ -1,22 +1,17 @@
-
-@btn-border: 1px solid @button-border-color;
 @btn-padding: 0 @ui-size/1.25;
 
-// Mixins -----------------------
-
+// Mixins
 .btn-default (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
   text-shadow: none;
-  border: @btn-border;
+  border: none;
   background-color: @color;
-  background-image: linear-gradient(lighten(@color, 2%), @color);
-
   &:hover {
     color: @text-color-highlight;
-    background-image: linear-gradient(lighten(@hover-color, 2%), @hover-color);
+    background-color: @hover-color;
   }
   &:active {
-    background: darken(@color, 4%);
+    background: @selected-color;
     box-shadow: none;
   }
   &.selected {
@@ -41,10 +36,6 @@
   );
   color: @_text-color;
 
-  & when (@ui-lightness > 50%) {
-    border-color: transparent; // hide border on light backgrounds
-  }
-
   &:hover,
   &:focus {
     color: @_text-color;
@@ -61,7 +52,7 @@
 }
 
 
-// Buttons -----------------------
+// Buttons
 
 .btn {
   height: initial;
@@ -76,7 +67,7 @@
 }
 
 .btn.btn-primary {
-  .btn-variant(@accent-bg-color);
+  .btn-variant(@accent-color);
 }
 .btn.btn-info {
   .btn-variant(@background-color-info);
@@ -114,10 +105,11 @@
 }
 
 
-// Button Group -----------------------
-
+// Button Group
 .btn-group > .btn {
   z-index: 0;
+  border: none;
+  box-shadow: .05rem 0 0 0 @base-border-color inset;
   &:hover {
     z-index: 0;
   }
@@ -127,57 +119,22 @@
   }
 
   &:first-child {
-    border-left: @btn-border;
-  }
-  &:last-child,
-  &.selected:last-child {
-    border-right: @btn-border;
+    box-shadow: none;
   }
 
-  // hide border on light backgrounds
-  & when (@ui-lightness > 50%) {
-    &.btn-primary:first-child,
-    &.btn-info:first-child,
-    &.btn-success:first-child,
-    &.btn-warning:first-child,
-    &.btn-error:first-child {
-      border-left-color: transparent;
-    }
-
-    &.btn-primary:last-child,
-    &.btn-info:last-child,
-    &.btn-success:last-child,
-    &.btn-warning:last-child,
-    &.btn-error:last-child {
-      border-right-color: transparent;
-    }
-  }
-
-  &.selected,
-  &.selected:first-child,
-  &.selected:last-child {
-    color: @button-text-color-selected;
-    border-color: @button-border-color-selected;
-  }
-
-  & when (@ui-lightness > 50%) {
-    &.selected + .btn {
-      border-left-color: @button-border-color-selected;
-    }
-    &.selected + .selected {
-      border-left-color: mix(@button-border-color, @button-border-color-selected);
-    }
-  }
+  // &.selected,
+  // &.selected:first-child,
+  // &.selected:last-child {
+  //   color: @button-text-color-selected;
+  // }
 
   &.selected:focus {
-    border-color: @button-background-color-selected;
-    box-shadow: inset 0 0 0 1px fade(@base-border-color, 50%), 0 0 0 1px @button-background-color-selected;
+    box-shadow: 0 0 0 .05rem @button-background-color-selected;
   }
 }
 
 
-// Button Icons -----------------------
-
+// Button Icons
 .btn.icon:before {
   line-height: inherit;
   vertical-align: top;

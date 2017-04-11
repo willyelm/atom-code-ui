@@ -1,11 +1,9 @@
 background-tips ul.background-message {
   font-weight: 500;
   font-size: 2em;
-  color: @text-color-faded;
-
+  color: fade(@text-color, 20%);
   .message {
     padding: 0 @component-padding * 10;
-
     .keystroke {
       white-space: nowrap;
       vertical-align: middle;

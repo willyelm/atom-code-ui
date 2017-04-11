@@ -15,7 +15,7 @@
   height: @height!important;
   top: (100%-@height)/2;
   bottom: (100%-@height)/2;
-  margin-left: -(@width + 3px);
+  margin-left: -(@width + 4px);
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
@@ -28,9 +28,9 @@
   }
 }
 
-.fileIcon (@width: 20px, @height: 85%) {
+.fileIcon (@width: 20px, @height: 84%) {
   position: relative;
-  padding-left: (@width + 3px)!important;
+  padding-left: (@width + 4px)!important;
   &::before {
     .fileIconContainer(@width, @height);
     // -webkit-filter: grayscale(80%);
