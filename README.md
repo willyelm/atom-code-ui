@@ -1,3 +1,3 @@
-# xatom
+# Xatom UI
 
-Xatom is a clean and elegant Atom UI.
+xatom is a clean and elegant Atom UI.
