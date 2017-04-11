@@ -1,6 +1,6 @@
 .fileIconImage(@fileType: '', @extension: 'svg') {
-  background-image: url('atom://xatom/icons/@{fileType}.@{extension}'),
-                    url("atom://xatom/icons/file.svg");
+  background-image: url('atom://xatom-ui/icons/@{fileType}.@{extension}'),
+                    url("atom://xatom-ui/icons/file.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -36,13 +36,13 @@
     // -webkit-filter: grayscale(80%);
   }
   &.icon-file-directory::before {
-    background-image: url("atom://xatom/icons/folder.svg");
+    background-image: url("atom://xatom-ui/icons/folder.svg");
   }
   &.icon-repo::before {
-    background-image: url("atom://xatom/icons/project.svg");
+    background-image: url("atom://xatom-ui/icons/project.svg");
   }
   &.icon-tools::before {
-    background-image: url("atom://xatom/icons/settings.svg");
+    background-image: url("atom://xatom-ui/icons/settings.svg");
   }
   &.icon-file-text::before {
     .fileIconImage('type/text');
