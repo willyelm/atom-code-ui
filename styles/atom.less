@@ -1,4 +1,4 @@
-@scrollbar-color: lighten(@base-background-color, 6%);
+@scrollbar-color: lighten(@base-background-color, 4%);
 
 * {
 	box-sizing: border-box;
@@ -15,48 +15,36 @@ atom-workspace {
 }
 
 // Scrollbars
-* {
-	::-webkit-scrollbar {
-		width: 10px;
-		height: 10px;
-	}
-	::-webkit-scrollbar-track {
-		// background-color: #292c34;
-	}
-	::-webkit-scrollbar-thumb {
-		border-radius: 5px;
-		border: 3px solid transparent;
-		background: #4a4f5c;
-		background-clip: content-box;
-	}
-	::-webkit-scrollbar-corner {
-		background: transparent;
-	}
-	::-webkit-scrollbar-thumb:vertical:active {
-		border-radius: 0;
-		border-left-width: 0;
-		border-right-width: 0;
-	}
-	::-webkit-scrollbar-thumb:horizontal:active {
-		border-radius: 0;
-		border-top-width: 0;
-		border-bottom-width: 0;
-	}
+.tree-view-scroller {
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar-corner{
+    background-color: @tree-view-bg-color;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  &:hover {
+    background-color: rgba(0,0,0,.1);
+  }
+}
 
-	// atom-text-editor {
-	// 	::-webkit-scrollbar-track {
-	// 		background: transparent;
-	// 	}
-	// 	::-webkit-scrollbar-corner {
-	// 		background: transparent;
-	// 	}
-	// 	::-webkit-scrollbar-thumb {
-	// 		border-radius: 5px;
-	// 		border: 3px solid transparent;
-	// 		background: @scrollbar-color;
-	// 		background-clip: content-box;
-	// 	}
-	// }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.1);
+  -webkit-border-radius: 100px;
+  background-clip: padding-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:horizontal:active {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
 }
 
 // TODO: Move to a better place, not sure where it gets used
