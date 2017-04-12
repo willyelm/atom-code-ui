@@ -54,17 +54,20 @@
 
 // status
 .statusBadge(@bgColor, @letter) {
+  // test a
   &.list-item,
   .header.list-item {
     color: @text-color!important;
-    :after {
+    &:after {
       content: '@{letter}';
       background-color: @bgColor;
       color: #FFF;
       display: inline-block;
       vertical-align: middle;
-      padding: 2px;
-      font-size: 60%;
+      padding: 1px;
+      width: 8px;
+      text-align: center;
+      font-size: 50%;
       line-height: 1;
       margin: 0 4px;
       margin-top: -2px;
