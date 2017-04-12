@@ -5,7 +5,7 @@ var root: HTMLElement = document.documentElement
 export class Xatom {
   private _fontSize: number | string;
   constructor () {
-    atom.config['observe']('xatom.fontSize', (value) => {
+    atom.config['observe']('xatom-ui.fontSize', (value) => {
       this.fontSize = value
     })
     // this.detectPixelRatio()
