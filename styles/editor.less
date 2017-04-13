@@ -1,17 +1,13 @@
-
 // Editor in a panel
-
-// TODO: Find a better selector, maybe a new class like atom-text-editor[medium]
 atom-panel-container atom-text-editor.is-focused {
   .focus();
 }
 
 atom-text-editor {
   .bracket-matcher .region {
-    background-color: fade(@accent-color, 60%);
-    border: 0.5px solid fade(@accent-color, 70%);
-    border-radius: 2px;
-    padding: 5px;
+    background-color: fade(@accent-color, 50%);
+    border-radius: @component-border-radius;
+    padding: 0 6px;
     margin-left: -2px;
   }
   .indent-guide {
@@ -26,6 +22,12 @@ atom-text-editor {
       height: 100%;
       border-left: 1px dashed rgba(255,255,255,.15);
     }
+  }
+  .cursor {
+    border: none;
+    background-color: @accent-color;
+    width: 3px!important;
+    border-radius: @component-border-radius;
   }
 }
 
@@ -49,10 +51,6 @@ atom-text-editor[mini] {
     .region {
       background-color: @input-selection-color;
     }
-  }
-  .cursor {
-    border-color: @accent-color;
-    border-width: 3px;
   }
   &.is-focused {
     .focus();

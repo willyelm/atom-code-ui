@@ -21,7 +21,7 @@
 @background-color-selected:  lighten(@base-background-color, 8%);
 
 // Base
-@base-background-color: darken(desaturate(@ui-syntax-color, 2%), 6%);
+@base-background-color: darken(saturate(@ui-syntax-color, 3%), 7%);
 @base-border-color: darken(@base-background-color, 3%);
 
 // Components
@@ -43,9 +43,8 @@
 @overlay-background-color:         @base-background-color;
 @overlay-border-color:             @base-border-color;
 
-@button-background-color:          lighten(desaturate(@ui-syntax-color, 2%), 5%);
-// #3F4043
-// lighten(@base-background-color, 10%);
+@button-background-color:          lighten(desaturate(@base-background-color, 4%), 10%);
+
 @button-background-color-hover:    lighten(@button-background-color, 5%);
 @button-background-color-selected: @accent-color;
 @button-border-color:              @base-border-color;

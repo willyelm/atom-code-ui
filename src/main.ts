@@ -1,4 +1,4 @@
-// Xatom
+// xatom
 import { install } from 'atom-package-deps'
 var root: HTMLElement = document.documentElement
 
@@ -42,7 +42,7 @@ export class Xatom {
 module.exports = {
   view: null,
   activate () {
-    // install('xatom', true)
+    install('xatom-ui', true)
     this.view = new Xatom()
   },
   deactivate () {
