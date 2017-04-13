@@ -1,5 +1,4 @@
 // Settings
-
 @ms-6: @ui-size * 2.027;
 @ms-5: @ui-size * 1.802;
 @ms-4: @ui-size * 1.602;
@@ -14,6 +13,19 @@
 	.setting-title {
 		font-size: @ui-size;
 	}
+  select.form-control {
+    border: 0;
+    margin-right: 5px;
+    font-size: @ui-size;
+  }
+  .alert-info {
+    background-color: transparent;
+    border-color: @background-color-info;
+    color: @background-color-info;
+    &.icon::before {
+      color: darken(@background-color-info, 15%)!important;
+    }
+  }
 	// Menu
 	.config-menu {
     .button-area {
@@ -26,7 +38,7 @@
 		min-width: @ui-size * 15;
 		max-width: @ui-size * 20;
     padding-top: 0;
-		background: @ui-syntax-color;//@base-background-color;
+		background: @base-background-color;
 		.btn {
 			white-space: initial;
 			font-size: @ms_1;
@@ -46,9 +58,7 @@
 		}
 	}
 
-
-	// Sections ------------------------------
-
+	// Sections
 	& > .panels {
 		background-color: @base-background-color;
 	}
@@ -85,6 +95,11 @@
 		border: none;
 		padding: @ui-padding*0.5;
 		font-size: @ui-size;
+    background-color: lighten(@base-background-color, 3%);
+    border-radius: @component-border-radius;
+    &:hover {
+      background-color: lighten(@base-background-color, 5%)!important;
+    }
 		.meta-controls .status-indicator {
 			width: @ui-padding/4;
 			&:before {

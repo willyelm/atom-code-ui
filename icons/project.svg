@@ -5,12 +5,12 @@
       <stop offset="100%" stop-color="#74B282"/>
     </linearGradient>
     <polygon id="project-b" points="1 1 55.279 1 81 25.674 81 111 1 111"/>
-    <filter id="project-a" width="117.5%" height="112.7%" x="-8.8%" y="-5.5%" filterUnits="objectBoundingBox">
+    <filter id="project-a" width="110%" height="107.3%" x="-5%" y="-2.7%" filterUnits="objectBoundingBox">
       <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
       <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
       <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
     </filter>
     <path id="project-d" d="M56,2 L80,25 L58.0049466,25 C56.8976452,25 56,24.0983727 56,22.9991358 L56,2 Z"/>
   </defs>

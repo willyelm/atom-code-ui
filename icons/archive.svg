@@ -6,12 +6,12 @@
       <stop offset="100%" stop-color="#E9EEF3"/>
     </linearGradient>
     <polygon id="archive-b" points="0 1 54.279 1 80 25.674 80 111 0 111"/>
-    <filter id="archive-a" width="117.5%" height="112.7%" x="-8.8%" y="-5.5%" filterUnits="objectBoundingBox">
+    <filter id="archive-a" width="110%" height="107.3%" x="-5%" y="-2.7%" filterUnits="objectBoundingBox">
       <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
       <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
       <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
     </filter>
     <path id="archive-d" d="M55.25,2 L79.25,25 L57.2549466,25 C56.1476452,25 55.25,24.0983727 55.25,22.9991358 L55.25,2 Z"/>
   </defs>

@@ -39,7 +39,8 @@
     border-left: @tab-border;
     &.active {
       color: @tab-text-color-active;
-      background-color: @tab-background-color-active;
+      background-color: @base-background-color;
+      // @tab-background-color-active;
       box-shadow: none;
     }
     &,
@@ -211,13 +212,13 @@ atom-dock .tab-bar .tab::before {
 }
 
 // Custom tabs --------------
-// .tab-bar .tab.active {
-//   &[data-type$="Editor"],
-//   &[data-type$="AboutView"],
-//   &[data-type$="TimecopView"],
-//   &[data-type$="StyleguideView"],
-//   &[data-type="MarkdownPreviewView"] {
-//     color: @tab-text-color-editor;
-//     background-color: @tab-background-color-editor;
-//   }
-// }
+.tab-bar .tab.active {
+  &[data-type$="Editor"],
+  &[data-type$="AboutView"],
+  &[data-type$="TimecopView"],
+  &[data-type$="StyleguideView"],
+  &[data-type="MarkdownPreviewView"] {
+    color: @tab-text-color-editor;
+    background-color: @tab-background-color-active;
+  }
+}

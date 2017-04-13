@@ -10,7 +10,7 @@
       <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
       <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
-      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.314424819 0"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
     </filter>
     <linearGradient id="folder-f" x1="50%" x2="50%" y1=".86%" y2="45.95%">
       <stop offset="0%" stop-color="#FFDA5E"/>
