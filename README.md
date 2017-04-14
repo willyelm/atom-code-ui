@@ -1,5 +1,8 @@
 # XAtom
 
+[![apm](https://img.shields.io/apm/v/xatom-ui.svg?style=flat-square)](https://atom.io/packages/xatom-ui)
+[![apm](https://img.shields.io/apm/l/xatom-ui.svg?style=flat-square)](https://github.com/willyelm/xatom-ui/blob/master/LICENSE.md)
+
 Xatom is a clean and elegant Atom UI. based on OS alike elements. this UI suits well on macOS systems making atom look like a native app.
 
 For a better color matching try it with [`xatom-syntax`](https://atom.io/themes/xatom-syntax).
