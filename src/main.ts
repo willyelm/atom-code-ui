@@ -8,19 +8,7 @@ export class Xatom {
     atom.config['observe']('xatom-ui.fontSize', (value) => {
       this.fontSize = value
     })
-    // this.detectPixelRatio()
   }
-  // detectPixelRatio () {
-  //   if (window.devicePixelRatio && devicePixelRatio >= 2) {
-  //     var testElem = document.createElement('div')
-  //     testElem.style.border = '.5px solid transparent'
-  //     document.body.appendChild(testElem)
-  //     if (testElem.offsetHeight >= 1) {
-  //       root.classList.add('hairlines')
-  //     }
-  //     document.body.removeChild(testElem)
-  //   }
-  // }
   set fontSize (value: any) {
     if (Number.isInteger(value)) {
       root.style.fontSize = `${value}px`
