@@ -1,12 +1,15 @@
 // xatom
-import { install } from 'atom-package-deps'
 var root: HTMLElement = document.documentElement
 
 export class Xatom {
   private _fontSize: number | string;
+  private _showDockButtons: string;
   constructor () {
     atom.config['observe']('xatom-ui.fontSize', (value) => {
       this.fontSize = value
+    })
+    atom.config['observe']('xatom-ui.fontSize', (value) => {
+      this.showDockButtons = value
     })
   }
   set fontSize (value: any) {
@@ -21,8 +24,19 @@ export class Xatom {
   get fontSize () {
     return this._fontSize
   }
+  set showDockButtons (value) {
+    if (value) {
+      root.setAttribute('theme-xatom-ui-dock-buttons', 'hidden')
+    } else {
+      root.removeAttribute('theme-xatom-ui-dock-buttons')
+    }
+  }
+  get showDockButtons () {
+    return this._showDockButtons
+  }
   destroy () {
     this.fontSize = null
+    this.showDockButtons = null
   }
 }
 
@@ -30,7 +44,7 @@ export class Xatom {
 module.exports = {
   view: null,
   activate () {
-    install('xatom-ui', true)
+    require('atom-package-deps').install('xatom-ui', true)
     this.view = new Xatom()
   },
   deactivate () {

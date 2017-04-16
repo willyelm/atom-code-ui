@@ -43,15 +43,11 @@
       "default": "Auto",
       "order": 1
     },
-    "tabSizing": {
-      "title": "Tab Sizing",
-      "description": "In Even mode all tabs will be the same size. Great for quickly closing many tabs. In Minimum mode the tabs will only take as little space as needed and also show longer file names.",
-      "type": "string",
-      "default": "Even",
-      "enum": [
-        "Even",
-        "Minimum"
-      ],
+    "hideDockButtons": {
+      "title": "Hide dock toggle buttons",
+      "description": "Note: When hiding the toggle buttons, opening a dock needs to be done by using the keyboard or other alternatives.",
+      "type": "boolean",
+      "default": "false",
       "order": 2
     }
   }
