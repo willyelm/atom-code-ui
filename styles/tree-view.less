@@ -58,7 +58,7 @@
 .statusBadge(@bgColor, @letter) {
   // test a
   &.list-item,
-  .header.list-item {
+  & > .header.list-item {
     color: @text-color!important;
     &:after {
       content: '@{letter}';
