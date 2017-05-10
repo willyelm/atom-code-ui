@@ -4,7 +4,8 @@
 .btn-default (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
   text-shadow: none;
-  border: none;
+  border: 1px solid @button-border-color;
+  box-shadow: 0 .05rem 0 0 lighten(@color, 4%) inset;
   background-color: @color;
   &:hover {
     color: @text-color-highlight;
@@ -22,7 +23,7 @@
     background: lighten(@selected-color, 2%);
   }
   &:focus {
-    .focus(); // unfortunately :focus styles stay even after releasing mouse.
+    .focus();
   }
 }
 
@@ -83,7 +84,7 @@
 }
 
 
-// Button Sizes -----------------------
+// Button Sizes
 
 .btn.btn-xs,
 .btn-group-xs > .btn {
@@ -108,8 +109,7 @@
 // Button Group
 .btn-group > .btn {
   z-index: 0;
-  border: none;
-  box-shadow: .05rem 0 0 0 @base-border-color inset;
+  // box-shadow: .05rem 0 0 0 @base-border-color inset;
   &:hover {
     z-index: 0;
   }
@@ -119,7 +119,7 @@
   }
 
   &:first-child {
-    box-shadow: none;
+    // box-shadow: none;
   }
 
   // &.selected,
@@ -129,7 +129,7 @@
   // }
 
   &.selected:focus {
-    box-shadow: 0 0 0 .05rem @button-background-color-selected;
+    border-color: @button-background-color-selected;
   }
 }
 
