@@ -55,12 +55,15 @@
       box-shadow: 1px 0 0 @base-border-color;
     }
 
-
+    &[data-type="TextEditor"] {
+      .title {
+        .fileIcon(26px, 64%);
+      }
+    }
     // Title
     .title {
       text-align: center;
       margin: 0 @title-padding;
-      .fileIcon(26px, 64%);
     }
 
     // Icons
