@@ -1,7 +1,7 @@
 {
   "name": "atom-code-ui",
   "theme": "ui",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A clean and elegant Atom UI.",
   "keywords": [
     "atom",
