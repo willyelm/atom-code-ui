@@ -15,7 +15,8 @@
   },
   "author": "Williams Medina <williams.medinaa@gmail.com>",
   "scripts": {
-    "start": "tsc -w"
+    "start": "tsc -w",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/atom": "0.0.37",
