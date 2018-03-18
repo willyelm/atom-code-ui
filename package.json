@@ -28,7 +28,7 @@
     "atom-package-deps": "^4.5.0"
   },
   "package-deps": [
-    "xatom-syntax"
+    "atom-code-syntax"
   ],
   "configSchema": {
     "fontSize": {

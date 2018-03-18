@@ -1,14 +1,14 @@
-// xatom
+// Atom Code
 var root: HTMLElement = document.documentElement
 
-export class Xatom {
+export class AtomCodeUI {
   private _fontSize: number | string;
   private _showDockButtons: string;
   constructor () {
-    atom.config['observe']('xatom-ui.fontSize', (value) => {
+    atom.config['observe']('atom-code-ui.fontSize', (value) => {
       this.fontSize = value
     })
-    atom.config['observe']('xatom-ui.fontSize', (value) => {
+    atom.config['observe']('atom-code-ui.fontSize', (value) => {
       this.showDockButtons = value
     })
   }
@@ -26,9 +26,9 @@ export class Xatom {
   }
   set showDockButtons (value) {
     if (value) {
-      root.setAttribute('theme-xatom-ui-dock-buttons', 'hidden')
+      root.setAttribute('theme-atom-code-ui-dock-buttons', 'hidden')
     } else {
-      root.removeAttribute('theme-xatom-ui-dock-buttons')
+      root.removeAttribute('theme-atom-code-ui-dock-buttons')
     }
   }
   get showDockButtons () {
@@ -40,12 +40,11 @@ export class Xatom {
   }
 }
 
-
 module.exports = {
   view: null,
   activate () {
-    require('atom-package-deps').install('xatom-ui', true)
-    this.view = new Xatom()
+    require('atom-package-deps').install('atom-code-ui', true)
+    this.view = new AtomCodeUI()
   },
   deactivate () {
     if (this.view) {
