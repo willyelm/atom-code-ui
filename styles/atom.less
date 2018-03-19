@@ -20,27 +20,28 @@ atom-workspace {
     background-color: @tree-view-bg-color;
   }
 }
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  background-color: transparent;
-  &:hover {
-    background-color: rgba(0,0,0,.1);
-  }
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.1);
-  -webkit-border-radius: 4px;
-  background-clip: padding-box;
-  border: 2px solid rgba(0, 0, 0, 0);
+* {
+	&::-webkit-scrollbar {
+	  width: 6px;
+	  height: 6px;
+	  background-color: transparent;
+	}
+	&:hover::-webkit-scrollbar {
+		background: rgba(0, 0, 0, 0.05);
+	}
+	&:hover::-webkit-scrollbar-thumb {
+		background: rgba(255, 255, 255, 0.15);
+		-webkit-border-radius: 6px;
+		background-clip: padding-box;
+		border: 1px solid transparent;
+	}
 }
 ::-webkit-scrollbar-thumb:vertical:active {
-  border: 1px solid rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:horizontal:active {
-  border: 2px solid rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.2);
 }
 ::-webkit-scrollbar-corner {
   background-color: transparent;
